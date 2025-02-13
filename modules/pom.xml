@@ -14,5 +14,8 @@
 	</parent>
 	<artifactId>liferay-primefaces-workspace-modules</artifactId>
 	<name>liferay-primefaces-workspace Modules</name>
-	<packaging>pom</packaging>
+    <modules>
+        <module>liferay-primefaces-portlet</module>
+    </modules>
+    <packaging>pom</packaging>
 </project>
