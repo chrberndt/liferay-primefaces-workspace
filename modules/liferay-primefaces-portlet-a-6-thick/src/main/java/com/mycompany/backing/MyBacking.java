@@ -1,6 +1,7 @@
 package com.mycompany.backing;
 
 import com.mycompany.dto.Greeting;
+import org.primefaces.event.TabChangeEvent;
 
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
@@ -14,5 +15,10 @@ public class MyBacking {
 
 	public Greeting getGreeting() {
 		return greeting;
+	}
+
+	public void onChange(TabChangeEvent event) {
+		System.out.println("onChange()");
+		System.out.println("event.getTab(): " + event.getTab());
 	}
 }

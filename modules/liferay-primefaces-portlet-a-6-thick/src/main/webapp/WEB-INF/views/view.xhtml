@@ -10,6 +10,18 @@
 		<h:outputStylesheet library="css" name="main.css" />
 	</h:head>
 	<h:body>
+		<p:tabView>
+			<p:ajax event="tabChange" listener="#{myBacking.onChange}" />
+			<p:tab title="Tab One">
+				<h:outputText value="Lorem" />
+			</p:tab>
+			<p:tab title="Tab Two">
+				<h:outputText value="Ipsum" />
+			</p:tab>
+			<p:tab title="Tab Three">
+				<h:outputText value="Dolor" />
+			</p:tab>
+		</p:tabView>
 		<p:panel id="panelId">
 			<h:outputText styleClass="bold-hello-world" value="#{i18n['liferay-primefaces-portlet-a-6-thick-hello-world']}" />
 			<p><h:outputText styleClass="bold-hello-world" value="#{myBacking.greeting}" /></p>
