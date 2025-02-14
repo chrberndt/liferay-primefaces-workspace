@@ -3,11 +3,11 @@ package com.mycompany.backing;
 import com.mycompany.dto.Greeting;
 import org.primefaces.event.TabChangeEvent;
 
-import javax.inject.Named;
-import javax.enterprise.context.RequestScoped;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
 
-@Named
-@RequestScoped
+@ManagedBean
+@ViewScoped
 // If building with Maven, specify the "-P cdi" profile to activate CDI.
 public class MyBacking {
 
