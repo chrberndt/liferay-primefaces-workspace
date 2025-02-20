@@ -14,6 +14,10 @@
   </parent>
   <artifactId>liferay-primefaces-workspace-modules</artifactId>
   <name>liferay-primefaces-workspace Modules</name>
+  <properties>
+    <faces.impl.scope>compile</faces.impl.scope>
+    <war.dependency.scope>compile</war.dependency.scope>
+  </properties>
   <modules>
     <module>liferay-primefaces-portlet</module>
   </modules>
