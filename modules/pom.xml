@@ -15,9 +15,6 @@
 	<artifactId>liferay-primefaces-workspace-modules</artifactId>
 	<name>liferay-primefaces-workspace Modules</name>
     <modules>
-        <module>liferay-primefaces-portlet</module>
-		<module>liferay-primefaces-portlet-a-6-thick</module>
-		<module>liferay-primefaces-portlet-a-7-thick</module>
     </modules>
     <packaging>pom</packaging>
 </project>
