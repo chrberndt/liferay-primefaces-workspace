@@ -4,7 +4,6 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <!-- Note: The parent POM contains "thin" and "cdi" profiles -->
   <parent>
     <groupId>liferay.primefaces.workspace</groupId>
     <artifactId>liferay-primefaces-workspace-modules</artifactId>
@@ -13,24 +12,6 @@
   <artifactId>liferay-primefaces-portlet</artifactId>
   <packaging>war</packaging>
   <name>liferay-primefaces-portlet</name>
-  <profiles>
-    <profile>
-      <id>thin</id>
-      <!-- Note: The properties in this profile override the values set in the parent POM in order to include PrimeFaces -->
-      <properties>
-        <osgi.dynamic.import.package>
-          DynamicImport-Package:\
-          ${osgi.dynamic.import.package.primefaces},\
-          ${osgi.dynamic.import.package.liferay.faces.bridge}
-        </osgi.dynamic.import.package>
-        <osgi.import.package>
-          Import-Package:\
-          ${osgi.import.package.primefaces},\
-          ${osgi.import.package.liferay.faces.bridge}
-        </osgi.import.package>
-      </properties>
-    </profile>
-  </profiles>
   <build>
     <plugins>
       <plugin>
@@ -44,12 +25,6 @@
     </plugins>
   </build>
   <dependencies>
-    <dependency>
-      <groupId>javax.enterprise</groupId>
-      <artifactId>cdi-api</artifactId>
-      <version>1.2</version>
-      <scope>provided</scope>
-    </dependency>
     <dependency>
       <groupId>javax.faces</groupId>
       <artifactId>javax.faces-api</artifactId>
@@ -65,13 +40,13 @@
     <dependency>
       <groupId>com.liferay.faces</groupId>
       <artifactId>com.liferay.faces.bridge.ext</artifactId>
-      <version>7.0.0</version>
+      <version>6.1.0</version>
       <scope>${war.dependency.scope}</scope>
     </dependency>
     <dependency>
       <groupId>com.liferay.faces</groupId>
       <artifactId>com.liferay.faces.bridge.impl</artifactId>
-      <version>5.0.0</version>
+      <version>4.2.1</version>
       <scope>${war.dependency.scope}</scope>
     </dependency>
     <dependency>
@@ -83,7 +58,7 @@
     <dependency>
       <groupId>org.primefaces</groupId>
       <artifactId>primefaces</artifactId>
-      <version>11.0.0</version>
+      <version>8.0</version>
       <scope>${war.dependency.scope}</scope>
     </dependency>
   </dependencies>

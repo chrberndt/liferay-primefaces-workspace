@@ -1,13 +1,11 @@
 package com.mycompany.backing;
 
 import com.mycompany.dto.Greeting;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 
-import javax.inject.Named;
-import javax.enterprise.context.RequestScoped;
-
-@Named
+@ManagedBean
 @RequestScoped
-// If building with Maven, specify the "-P cdi" profile to activate CDI.
 public class MyBacking {
 
 	private Greeting greeting = new Greeting();
