@@ -4,7 +4,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
 /**
- * Christian Berndt
+ * @author Christian Berndt
  */
 @ManagedBean(name = "statusBean")
 @ViewScoped
