@@ -15,8 +15,11 @@
   <artifactId>liferay-primefaces-workspace-modules</artifactId>
   <name>liferay-primefaces-workspace Modules</name>
   <properties>
-    <faces.impl.scope>compile</faces.impl.scope>
-    <war.dependency.scope>compile</war.dependency.scope>
+    <faces.impl.scope>runtime</faces.impl.scope>
+<!--    <faces.impl.scope>compile</faces.impl.scope>-->
+    <liferay.faces.bridge.ext.version>8.0.1</liferay.faces.bridge.ext.version>
+    <war.dependency.scope>runtime</war.dependency.scope>
+<!--    <war.dependency.scope>compile</war.dependency.scope>-->
   </properties>
   <modules>
     <module>liferay-primefaces-portlet</module>

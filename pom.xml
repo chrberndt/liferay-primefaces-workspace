@@ -14,9 +14,11 @@
 	<properties>
 
 		<!-- Change this value to the match the corresponding target bundle URL. -->
-		<liferay.bom.version>7.3.10.u35</liferay.bom.version>
+		<liferay.bom.version>2024.q4.4</liferay.bom.version>
+<!--		<liferay.bom.version>7.3.10.u35</liferay.bom.version>-->
 
-		<liferay.workspace.bundle.url>https://releases-cdn.liferay.com/dxp/7.3.10-u35/liferay-dxp-tomcat-7.3.10.u35-20231114110531823.tar.gz</liferay.workspace.bundle.url>
+		<liferay.workspace.bundle.url>https://releases-cdn.liferay.com/dxp/2024.q4.4/liferay-dxp-tomcat-2024.q4.4-1737380895.tar.gz</liferay.workspace.bundle.url>
+<!--		<liferay.workspace.bundle.url>https://releases-cdn.liferay.com/dxp/7.3.10-u35/liferay-dxp-tomcat-7.3.10.u35-20231114110531823.tar.gz</liferay.workspace.bundle.url>-->
 
 		<liferay.repository.url>https://repository-cdn.liferay.com/nexus/content/groups/public/</liferay.repository.url>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

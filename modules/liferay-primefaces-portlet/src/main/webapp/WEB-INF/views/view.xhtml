@@ -7,7 +7,8 @@
 	xmlns:p="http://primefaces.org/ui"
 >
 	<f:metadata>
-		<f:event type="preRenderView" listener="#{viewManager.redirect()}" />
+		<f:viewAction action="#{viewManager.redirect()}" />
+<!--		<f:event type="preRenderView" listener="#{viewManager.redirect()}" />-->
 	</f:metadata>
 	<h:body>
 	</h:body>
